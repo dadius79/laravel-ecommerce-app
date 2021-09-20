@@ -1,14 +1,15 @@
 <?php
 
+namespace Database\Seeders;
+
 use App\Models\Setting;
 use Illuminate\Database\Seeder;
 
 class SettingsTableSeeder extends Seeder
 {
-    /**
+     /**
      * @var array
      */
-
     protected $settings = [
         [
             'key'                       =>  'site_name',
@@ -99,19 +100,18 @@ class SettingsTableSeeder extends Seeder
             'value'                     =>  '',
         ],
     ];
-
+    
     /**
      * Run the database seeds.
      *
      * @return void
      */
-
     public function run()
     {
         foreach ($this->settings as $index => $setting)
         {
             $result = Setting::create($setting);
-            if(!$result) {
+            if (!$result) {
                 $this->command->info("Insert failed at record $index.");
                 return;
             }

@@ -1,5 +1,6 @@
 <?php
 
+namespace Database\Seeders;
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\BaseController;
