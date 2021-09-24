@@ -1,7 +1,7 @@
 @extends('admin.app')
 @section('title') Dashboard @endsection
 @section('content')
-    <div class="app-title">
+    <div class="app-title mt-3">
         <div>
             <h1><i class="fa fa-dashboard"></i> Dashboard</h1>
         </div>

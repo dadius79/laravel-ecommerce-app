@@ -39,12 +39,6 @@
             </a>
         </li>
         <li>
-            <a class="app-menu__item {{ Route::currentRouteName() == 'admin.settings' ? 'active' : '' }}" href="{{ route('admin.settings') }}">
-                <i class="app-menu__icon fa fa-cogs"></i>
-                <span class="app-menu__label">Settings</span>
-            </a>
-        </li>
-        <li>
             <a class="app-menu__item {{ Route::currentRouteName() == 'admin.brands.index' ? 'active' : ''}}" href="{{ route('admin.brands.index') }}"><i class="app-menu__icon fa fa-dashboard"></i>
                 <span class="app-menu__label">Brands</span>
             </a>
@@ -67,7 +61,8 @@
             </ul>
         </li>
         <li>
-            <a class="app-menu__item" href="#"><i class="app-menu__icon fa fa-cogs"></i>
+            <a class="app-menu__item {{ Route::currentRouteName() == 'admin.settings' ? 'active' : '' }}" href="{{ route('admin.settings') }}">
+                <i class="app-menu__icon fa fa-cogs"></i>
                 <span class="app-menu__label">Settings</span>
             </a>
         </li>

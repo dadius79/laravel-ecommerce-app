@@ -3,7 +3,7 @@
 @section('title') {{ $pageTitle }} @endsection
 
 @section('content')
-    <div class="app-title">
+    <div class="app-title mt-3">
         <div>
             <h1><i class="fa fa-cogs"></i> {{ $pageTitle }}</h1>
         </div>

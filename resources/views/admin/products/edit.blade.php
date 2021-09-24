@@ -4,7 +4,7 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('backend/js/plugins/dropzone/dist/min/dropzone.min.css') }}"/>
 @endsection
 @section('content')
-    <div class="app-title">
+    <div class="app-title mt-3">
         <div>
             <h1><i class="fa fa-shopping-bag"></i> {{ $pageTitle }} - {{ $subTitle }}</h1>
         </div>

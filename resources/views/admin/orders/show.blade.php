@@ -1,7 +1,7 @@
 @extends('admin.app')
 @section('title') {{ $pageTitle }} @endsection
 @section('content')
-    <div class="app-title">
+    <div class="app-title mt-3">
         <div>
             <h1><i class="fa fa-bar-chart"></i> {{ $pageTitle }}</h1>
             <p>{{ $subTitle }}</p>
