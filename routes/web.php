@@ -17,8 +17,6 @@ use Illuminate\Support\Facades\Route;
     return view('welcome');
 });*/
 
-//Comment Taste II
-
 Route::view('/', 'site.pages.homepage');
 Route::get('/category/{slug}', 'App\Http\Controllers\Site\CategoryController@show')->name('category.show');
 Route::get('/product/{slug}', 'App\Http\Controllers\Site\ProductController@show')->name('product.show');
@@ -29,7 +27,6 @@ Route::get('/cart/clear', 'App\Http\Controllers\Site\CartController@clearCart')-
 
 
 Route::middleware('auth')->group(function(){
-//Route::group(['middleware' => ['auth']], function () {
     Route::get('/checkout', 'App\Http\Controllers\Site\CheckoutController@getCheckout')->name('checkout.index');
     Route::post('/checkout/order', 'App\Http\Controllers\Site\CheckoutController@placeOrder')->name('checkout.place.order');
 
