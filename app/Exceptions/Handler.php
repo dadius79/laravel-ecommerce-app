@@ -3,7 +3,7 @@
 namespace App\Exceptions;
 
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
-use Illuminate\Auth\AuthenticationException;
+use Illuminate\Auth\AuthenticationException; //Dont forget to import this class
 use Illuminate\Support\Arr; //EDBYDOS - https://github.com/DevMarketer/multiauth_tutorial/issues/29
 use Throwable;
 
