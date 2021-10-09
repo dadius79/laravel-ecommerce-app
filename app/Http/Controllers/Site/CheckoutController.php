@@ -11,6 +11,7 @@ class CheckoutController extends Controller
 {
 
     protected $payPal;
+    protected $orderRepository;
 
     public function __construct(OrderContract $orderRepository, PayPalService $payPal)
     {
